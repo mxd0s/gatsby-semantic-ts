@@ -18,6 +18,6 @@ jobs:
         with:
           node-version: "13.x"
 
-      - run: npm version
-      - run: npm ci
-      - run: npm audit --audit-level=moderate
+      - run: yarn version
+      - run: yarn install --frozen-lockfile
+      - run: yarn audit --level moderate
