@@ -20,6 +20,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm version
-      - run: npm install
-      - run: npm run ci
+      - run: yarn version
+      - run: yarn
+      - run: yarn install --frozen-lockfile
